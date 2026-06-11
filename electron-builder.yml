@@ -1,0 +1,25 @@
+appId: com.mcmodhub.app
+productName: MC Mod Hub
+directories:
+  output: release
+  buildResources: public
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: public/icon.png
+  signAndEditExecutable: false
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  installerIcon: public/icon.png
+  uninstallerIcon: public/icon.png
+files:
+  - electron/**/*
+  - .next/standalone/**/*
+  - .next/static/**/*
+  - public/**/*
+  - package.json
+extraMetadata:
+  main: electron/main.js
