@@ -13,8 +13,6 @@ nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
-  installerIcon: public/icon.png
-  uninstallerIcon: public/icon.png
 files:
   - electron/**/*
   - .next/standalone/**/*

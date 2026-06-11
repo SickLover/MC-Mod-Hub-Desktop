@@ -30,6 +30,7 @@ jobs:
         run: npx electron-builder --win
         env:
           ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v1
