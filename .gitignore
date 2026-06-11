@@ -34,3 +34,12 @@ Desktop.ini
 
 # debug
 npm-debug.log*
+
+# build artifacts
+tsconfig.tsbuildinfo
+
+# reasonix
+.reasonix/
+
+# codegraph
+.codegraph/
